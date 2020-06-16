@@ -4,23 +4,22 @@ import { Button } from 'react-bootstrap';
 import Chat from './Chat/Index'
 
 class ProjectInfo extends Component {
-   
+
 
 
     render() {
         return (
             <div>
-             <div className= 'container'>
-                 <div className='row'>
-                     <div className='col-md-2'>
+                
+                    <div className='row'>
+                        <div className='col-md-2'>
                             <p style={{ fontSize: 16, textAlign: 'right' }}>Project Name: </p>
-                     </div>
+                        </div>
                         <div className='col-md-2'>
                             <p style={{ fontSize: 16, fontWeight: 'bold', textAlign: 'left' }}>The Beginning</p>
                         </div>
-                 </div>
-             </div>
-                <div className='container'>
+                    </div>
+                <div className='row'>
                     <div className='col-md-2'>
                         <p style={{ fontSize: 16, fontWeight: 'bold' }}>Personnel</p>
                     </div>
@@ -42,6 +41,20 @@ class ProjectInfo extends Component {
                     </div>
                     <div className='Personnel'>
                         <p style={{ fontSize: 16, fontWeight: 'bold', textAlign: 'left' }}>TBD - CPA</p>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-md-3'>
+                        <p style={{ fontSize: 16, textAlign: 'center' }}>Location</p>
+                    </div>
+                    <div className='Location'>
+                        <p style={{ fontSize: 16, fontWeight: 'bold', textAlign: 'left' }}>Broadacres Elementary</p>
+                    </div>
+                    <div className='Location'>
+                        <p style={{ fontSize: 16, fontWeight: 'bold', textAlign: 'left' }}>Leapwood Elementary</p>
+                    </div>
+                    <div className='Location'>
+                        <p style={{ fontSize: 16, fontWeight: 'bold', textAlign: 'left' }}>Courtis JH</p>
                     </div>
                 </div>
             </div>
