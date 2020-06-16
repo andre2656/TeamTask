@@ -21,7 +21,7 @@ router.get('/receive', (req, res) => {
     db.Chat.findAll({
         where: {email: req.query.email}
     }).then(messages => {
-        console.log(messages)
+        // console.log(messages)
         res.json(messages)
     })
 })

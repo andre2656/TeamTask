@@ -13,7 +13,7 @@ class LoginController {
         axios.post("/api/Users/login", postData)
             .then(response => {
                 // Got here, we should have a cookie set and can go forward
-                console.log("User logged in");
+                // console.log("User logged in");
 
                 let user = response.data.user;
                 this.setUser(user);

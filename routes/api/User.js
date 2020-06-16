@@ -26,7 +26,7 @@ router.post("/login", (req, res) => {
                 // Good to go, let the client know
                 res.json({ user: user });
             } catch (err) {
-                console.log(err)
+                // console.log(err)
                 res.status(401).json({ error: err.message });
             }
         }

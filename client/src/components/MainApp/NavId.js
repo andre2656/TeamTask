@@ -20,11 +20,12 @@ class NavId extends Component {
         loginController.removeUserChangedListener(this.setUser);
     }
     setUser = (user) => {
-        this.setState({ user: user }, 
-            this.UsernameInitials(user));
+        this.setState({ user: user });
+        console.log('helllloooo')
+        this.UsernameInitials(user)
     }
     UsernameInitials = (user) => {
-        console.log(user.firstName + ' hello  sdf' + user.lastName) 
+        console.log(user+ ' hello  sdf' + user.firstName) 
     }
     render() {
         return (
