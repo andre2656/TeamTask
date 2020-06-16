@@ -31,11 +31,7 @@ class NavId extends Component {
         return (
             <div>
                 <div className='row' id="navBar">
-                    <div id='Wrapper'>
-                        <div className='card' id='Card'>
-                            <div className='col-md-12'>
-                                <p id='cardHeader'>Personnel</p>
-                            </div>
+                    <div id='mainPersonnel'>
                             <div className='row' id='Presonnel'>
                                 <div id='personnelWrapper'>
                                     <button type="button" id="personnelDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -103,14 +99,11 @@ class NavId extends Component {
                                         <p id='Phone'>(310)555-1234</p>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
-                    <div className='col-md-5' id="title"><h2>Team Task</h2></div>
-                    <div className="col-md-1" />
-                    <div className='col-md-3' id="welcome-text"> {this.state.user ? <div>Welcome {this.state.user.user.firstName}!</div> : null}</div>
+                    <div className='col-md-3' id="title"><h2>Team Task</h2></div>
                     <Link className="sign-out" to="/"><button type="button" className="btn btn-light" id="signout" onClick={this.logout} value="Log out">Log out</button></Link>
-                    <div className='col-md-1' />
+                    <div className='col-md-2' />
                 </div>
             </div>
         );
