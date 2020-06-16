@@ -1,26 +1,30 @@
 #navBar {
     background-color: black;
     color: white;
-    margin-bottom: 50px;
-    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    margin-bottom:50px;
     justify-content: center;
 }
  
 #title {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 #welcome-text {
-    margin-top: 18px;
+    margin-top: 0px;
 }
 
 #signout {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 @media(max-width:767px) {
     #navBar {
-        height: 150px;
+        height: 25px;
     }
 
     #welcome-text {
