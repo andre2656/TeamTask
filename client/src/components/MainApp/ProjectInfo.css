@@ -1,36 +1,111 @@
 #Personnel{
-    font-size: 16px;
     font-weight: bold;
     text-align: center;
     width: 50%;
     height: 40px;
     border-right: solid 1px black;
-    
-    
+}
+#cardContent{
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    cursor: pointer;
+    display: block;
+    margin-bottom: 8px;
+    max-width: 300px;
+    min-height: 20px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0
+}
+#cardText{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left
+}
+#list-cards{
+        flex: 1 1 auto;
+    margin-bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 4px;
+    padding: 0 4px;
+    z-index: 1;
+    min-height: 0;
 }
 #Name{
-    font-size: 16;
+    font-size: 14px;
     font-weight: 'bold';
     text-align: 'center';
-    width: 50%;
+    width: 44%;
     height: 40px;
     padding-top: 8px;
     margin: auto;
     border: solid 1px gray;
     border-right: solid 1px black;
-    border-radius: 5px;
     background-color: #ffffff;
+    margin-right: 0px;
+    margin-left: 16px;
 }
 #Position{
-    font-size: 16;
+    font-size: 14px;
     font-weight: 'bold';
     text-align: 'center';
-    width: 50%;
+    width: 44%;
     height: 40px;
     padding-top: 8px;
     margin-bottom: 0px;
+     margin: auto;
     border: solid 1px gray;
     border-left: solid 2px black;
-    border-radius: 5px;
+    margin-left: 0px;
     background-color: #ffffff;
+}
+#Card{
+    /* width: 272px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    padding-left: 3px; 
+    padding-right: 3px; 
+    background-color: #EEEEEE;
+    margin-left: 8px;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap; */
+    background-color: #ebecf0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+}
+#Wrapper{
+    width: 272px;
+    margin: 0 4px;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+}
+#cardHeader{
+    font-size: 16px;
+
+}
+#Board{
+    user-select: none;
+    white-space: nowrap;
+    margin-bottom: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
