@@ -1,36 +1,46 @@
 #Personnel{
-    font-size: 16px;
     font-weight: bold;
     text-align: center;
     width: 50%;
     height: 40px;
     border-right: solid 1px black;
-    
-    
 }
 #Name{
-    font-size: 16;
+    font-size: 14px;
     font-weight: 'bold';
     text-align: 'center';
-    width: 50%;
+    width: 44%;
     height: 40px;
     padding-top: 8px;
     margin: auto;
     border: solid 1px gray;
     border-right: solid 1px black;
-    border-radius: 5px;
     background-color: #ffffff;
+    margin-right: 0px;
+    margin-left: 16px;
 }
 #Position{
-    font-size: 16;
+    font-size: 14px;
     font-weight: 'bold';
     text-align: 'center';
-    width: 50%;
+    width: 44%;
     height: 40px;
     padding-top: 8px;
     margin-bottom: 0px;
+     margin: auto;
     border: solid 1px gray;
     border-left: solid 2px black;
-    border-radius: 5px;
+    margin-left: 0px;
     background-color: #ffffff;
+}
+#Card{
+    width: 272px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    padding-left: 3px; 
+    padding-right: 3; 
+    margin-left: 8; 
+    background-color: #EEEEEE;
+    display: block;
+    margin-left: 8px;
 }
