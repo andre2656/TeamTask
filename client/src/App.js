@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css'
 import MarketingSite from "./components/MarketingSite/MarketingSite"
 import SignUp from './components/SignUp/SignUp';
-import StyleApp from './components/StyleApp/StyleApp';
-import SettingsForm from './components/StyleApp/SettingsForm/SettingsForm';
+import MainApp from './components/MainApp/MainApp';
+import SettingsForm from './components/MainApp/SettingsForm/SettingsForm';
 import Payment from './components/SignUp/Payment';
 // import IconQuiz from './components/Quizzes/IconQuiz/IconQuiz';
-import Chat from './components/StyleApp/Chat/Index.js'
+import Chat from './components/MainApp/Chat/Index.js'
 import stylistChat from './components/AdminPage/MessageNav'
 // import FashionStyleQuiz from './components/Quizzes/FashionStyleQuiz/FashionStyleQuiz';
 import loginController from "./controllers/LoginController";
@@ -46,7 +46,7 @@ class App extends Component {
           <Route exact path="/sign-up" component={SignUp} />
           <Route exact path="/payment" component={Payment} />
           <Route exact path="/settings" component={SettingsForm} />
-          <Route exact path="/app" component={StyleApp} />
+          <Route exact path="/app" component={MainApp} />
           {/* <Route exact path="/iconq" component={IconQuiz} /> */}
           {/* <Route exact path="/fsq" component={FashionStyleQuiz} />
           <Route exact path= "/chat" component={Chat}/>

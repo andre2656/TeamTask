@@ -3,6 +3,7 @@ import NavId from './NavId';
 import Axios from 'axios';
 import loginController from '../../controllers/LoginController'
 import Chat from './Chat/Index'
+import ProjectInfo from './ProjectInfo'
 
 
 class StyleApp extends React.Component {
@@ -29,6 +30,7 @@ class StyleApp extends React.Component {
                 return (
                         <div>
                                 <NavId />
+                                <ProjectInfo/>
                                 <Chat/>
                         </div>
 
