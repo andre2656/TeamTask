@@ -31,7 +31,6 @@ class StyleApp extends React.Component {
                         <div>
                                 <NavId />
                                 <ProjectInfo/>
-                                <Chat/>
                         </div>
 
                 )

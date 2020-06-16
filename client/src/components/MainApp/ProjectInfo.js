@@ -11,43 +11,13 @@ class ProjectInfo extends Component {
         return (
             <div style={{ marginTop: 50, display: 'flex', flexDirection: 'column' }}>
 
-                
-                    <div className='col-md-12'>
-                        <p style={{ fontSize: 22, fontWeight: 'bold', textAlign: 'left', padding: '8 4 4 8', height: 36, display: 'block', width: '100%' }}>The Beginning</p>
-                    </div>
-                <div style={{width: '100%', }} id='Board'>
-              
-                    <div id='Wrapper'>
-                        <div className='card' id='Card'>
-                            <div className='col-md-12'>
-                                <p id='cardHeader'>Personnel</p>
-                            </div>
-                            <div className='row' id='Presonnel'>
-                                <p id='Name'>Terrence Campbell </p>
-                                <p id='Position'> Creative Direction</p>
-                            </div>
-                            <div className='row' id='Presonnel'>
-                                <p id='Name'>Helen Aguilar </p>
-                                <p id='Position'>Costume/Prop</p>
-                            </div>
-                            <div className='row' id='Presonnel'>
-                                <p id='Name'>Nasim Campbell</p>
-                                <p id='Position'>Styling</p>
-                            </div>
-                            <div className='row' id='Presonnel'>
-                                <p id='Name'>Kwe Johnson</p>
-                                <p id='Position'>Photographer</p>
-                            </div>
-                            <div className='row' id='Presonnel'>
-                                <p id='Name'>TBD</p>
-                                <p id='Position'> Hair/Make Up</p>
-                            </div>
-                            <div className='row' id='Presonnel'>
-                                <p id='Name'>TBD</p>
-                                <p id='Position'>CPA</p>
-                            </div>
-                        </div>
-                    </div>
+
+                <div className='col-md-12'>
+                    <p style={{ fontSize: 22, fontWeight: 'bold', textAlign: 'left', padding: '8 4 4 8', height: 36, display: 'block', width: '100%' }}>The Beginning</p>
+                </div>
+                <div style={{ width: '100%', }} id='Board'>
+
+ 
                     <div id='Wrapper'>
                         <div className='card' id='Card'>
                             <div className='col-md-12'>
@@ -55,16 +25,16 @@ class ProjectInfo extends Component {
                             </div>
                             <div id='list-cards'>
                                 <div id='cardContent'>
-                                    <p id= 'cardText'>Broadacres Elementary</p>
+                                    <p id='cardText'>Broadacres Elementary</p>
                                 </div>
                                 <div id='cardContent'>
-                                    <p id= 'cardText'>Leapwood Elementary</p>
+                                    <p id='cardText'>Leapwood Elementary</p>
                                 </div>
                                 <div id='cardContent'>
-                                    <p id= 'cardText'>Courtis JH <br /> <br /> Add in Links to the locations and googleMaps photos</p>
+                                    <p id='cardText'>Courtis JH <br /> <br /> Add in Links to the locations and googleMaps photos</p>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div id='Wrapper'>

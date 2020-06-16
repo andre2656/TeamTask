@@ -8,6 +8,11 @@
     height: 50px;
     margin-bottom:50px;
     justify-content: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    max-width: 101%;
+    
 }
  
 #title {

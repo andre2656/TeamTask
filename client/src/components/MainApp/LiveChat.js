@@ -11,12 +11,12 @@ class LiveChat extends Component {
         this.handleClose = this.handleClose.bind(this);
 
         this.state = {
-            show: false,
+            show: true,
         };
     }
 
     handleClose() {
-        this.setState({ show: false });
+        this.setState({ show: true });
     }
 
     handleShow() {
