@@ -33,47 +33,9 @@
     z-index: 1;
     min-height: 0;
 }
-#Name{
-    font-size: 14px;
-    font-weight: 'bold';
-    text-align: 'center';
-    width: 44%;
-    height: 40px;
-    padding-top: 8px;
-    margin: auto;
-    border: solid 1px gray;
-    border-right: solid 1px black;
-    background-color: #ffffff;
-    margin-right: 0px;
-    margin-left: 16px;
-}
-#Position{
-    font-size: 14px;
-    font-weight: 'bold';
-    text-align: 'center';
-    width: 44%;
-    height: 40px;
-    padding-top: 8px;
-    margin-bottom: 0px;
-     margin: auto;
-    border: solid 1px gray;
-    border-left: solid 2px black;
-    margin-left: 0px;
-    background-color: #ffffff;
-}
+
+
 #Card{
-    /* width: 272px; 
-    padding-top: 5px; 
-    padding-bottom: 5px; 
-    padding-left: 3px; 
-    padding-right: 3px; 
-    background-color: #EEEEEE;
-    margin-left: 8px;
-    height: 100%;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap; */
     background-color: #ebecf0;
     border-radius: 3px;
     box-sizing: border-box;
@@ -104,13 +66,13 @@
     overflow-y: hidden;
     padding-bottom: 8px;
     position: absolute;
-    top: 100px;
+    top: 110px;
     right: 0;
     bottom: 0;
     left: 0;
 }
 #personnelDropdown{
-  background-image: linear-gradient(to bottom right, purple, blue);
+  background-image: linear-gradient(to bottom right, #F2F2F2, #E5E5E5);
   border: none;
   border-radius: 25px;
   height: 28px;
@@ -122,10 +84,10 @@
   margin: auto;
   padding: .5px;
   margin-right: -2px;
-  color: white
+  color: black
 }
 #personnelRow{
-     color: black;
+     color: white;
     background-color: #24292e;
     position: absolute;
     top: 50;
@@ -138,4 +100,46 @@
     justify-content: space-between;
     width: 100%;
     opacity: 1;
+}
+#mainPersonnel{
+    margin-top: 15px;
+}
+#dropdownMenu{
+    width: 280px;
+    height: 200px;
+    padding: 8px;
+}
+#userProfileImg{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px
+}
+#Name{
+    font-size: 16px;
+    font-weight: '500';
+    text-align: 'left';
+    width: 100%;
+    height: 40px;
+    padding-top: 8px;
+    margin: auto;
+    border: solid 1px gray;
+    border-right: solid 1px black;
+    background-color: #ffffff;
+    margin-right: 0px;
+    margin-left: 16px;
+}
+#Position{
+    font-size: 16px;
+    text-align: 'left';
+    width: 100%;
+    height: 40px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+     margin: auto;
+    border: solid 1px gray;
+    border-left: solid 2px black;
+    margin-left: 0px;
+    background-color: #ffffff;
 }
