@@ -15,10 +15,10 @@ class MessageList extends React.Component {
 
     componentDidUpdate = (prevProps) => {
         if (prevProps.messages.length !== this.props.messages.length) {
-            console.log('component did update')
+            // console.log('component did update')
             this.setState({ messages: this.props.messages },
                 () => {
-                    console.log(this.state.messages)
+                    // console.log(this.state.messages)
                     this.renderMessages();
                 })
         }

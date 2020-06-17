@@ -22,7 +22,7 @@ class MessageNav extends React.Component {
                 });
 
         }).catch(function (error) {
-            console.log(error);
+            // console.log(error);
         });
     }
 
@@ -65,7 +65,7 @@ class MessageNav extends React.Component {
         }).then((response) => {
             this.setState({ messages: response.data })
         }).catch(function (error) {
-            console.log(error);
+            // console.log(error);
         });
     }
     render() {
