@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import './NavId.css';
 import loginController from "../../controllers/LoginController"
-
 class NavId extends Component {
     state = {
         user: null,
@@ -39,7 +38,9 @@ class NavId extends Component {
                     <div className='col-md-4' id="title" style={{textAlign: "center"}}><h2>Team Task</h2></div>
                     <div className='col-md-1'/>
                     <div className='col-md-1' />
-                    <div className='col-md-1' > <ion-icon name="chatbubbles-outline"></ion-icon></div>
+                    <div className='col-md-1' >
+
+                    </div>
                     <div id='UserDropdown' className='col-md-1' style={{  }}>
                         <button type="button" id="UserDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.UserDrop}>
                             AC
