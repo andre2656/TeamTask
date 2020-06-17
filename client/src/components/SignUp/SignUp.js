@@ -12,7 +12,7 @@ class SignUp extends Component {
         lastName: '',
         email: '',
         password: '',
-        premium: false
+        phone: '',
     };
 
     firstNameChanged = (event) => {
@@ -23,6 +23,9 @@ class SignUp extends Component {
     };
     emailChanged = (event) => {
         this.setState({ email: event.target.value });
+    }
+    phoneChanged = (event) => {
+        this.setState({ phone: event.target.value });
     }
     passwordChanged = (event) => {
         this.setState({ password: event.target.value });
@@ -35,27 +38,8 @@ class SignUp extends Component {
     }
     handleClick = () => {
         if (this.isFormValid()) {
-            this.setState({
-                premium: false
-            },
+           
                 this.createAccount
-            )
-            
-        } else {
-            this.handleShow();
-        }
-    }
-    handlePremiumClick = () => {
-        if (this.isFormValid()) {
-            this.setState({
-                premium: true
-            },
-            () => {
-                console.log(this.state.premium);
-                this.createAccount();
-            }
-            );
-            
             
         } else {
             this.handleShow();
@@ -66,23 +50,18 @@ class SignUp extends Component {
             firstName: this.state.firstName,
             lastName: this.state.lastName,
             email: this.state.email,
+            phone: this.state.phone,
             password: this.state.password,
-            premium: this.state.premium
         })
             .then((response) => {
-                if (this.state.premium) {
-                    window.location.pathname = "/payment";
-                }else{
-                    window.location.pathname = "/settings";
-                }
-               
+                window.location.pathname = "/settings";
             })
             .catch(function (error) {
                 // console.log(error);
             });
     }
     isFormValid = () => {
-        if (this.state.firstName === '' || this.state.lastName === '' ||  this.state.email === '' || !validator.isEmail(this.state.email) || this.state.password === '') {
+        if (this.state.firstName === '' || this.state.lastName === '' || this.state.email === '' || !validator.isEmail(this.state.email) || this.state.password === '' || this.state.phone === '') {
             return false;
         } else {
             return true;
@@ -116,6 +95,12 @@ class SignUp extends Component {
                                     <label name="email" className="col-sm-3 col-form-label">Email</label>
                                     <div className="col-sm-9">
                                         <input type="email" className="form-control" id="email" placeholder="" onChange={this.emailChanged} />
+                                    </div>
+                                </div>
+                                <div className="form-group row">
+                                    <label name="phone" className="col-sm-3 col-form-label">Phone</label>
+                                    <div className="col-sm-9">
+                                        <input type="phone" className="form-control" id="phone" placeholder="" onChange={this.phoneChanged} />
                                     </div>
                                 </div>
                                 <div className="form-group row">

@@ -7,7 +7,7 @@ module.exports = {
                 lastName: req.lastname,
                 email: req.email,
                 password: req.password,
-                premium: req.premium
+                phone: req.phone
             })
             .then(dbModel => {
                 res.json(dbModel);
