@@ -17,13 +17,13 @@ class Payment extends Component {
     };
 
     componentDidMount() {
-        console.log("componentDidMount");
+        // console.log("componentDidMount");
         loginController.addUserChangedListener(this.setUser);
         loginController.recheckLogin();
     }
 
     componentWillUnmount() {
-        console.log("WillUnmount");
+        // console.log("WillUnmount");
         loginController.removeUserChangedListener(this.setUser);
     }
 
@@ -68,7 +68,7 @@ class Payment extends Component {
                 this.checkPage(response);
             })
             .catch(function (error) {
-                console.log(error);
+                // console.log(error);
             });
     }
     checkPage = (response) => {
@@ -77,7 +77,7 @@ class Payment extends Component {
                 email: this.state.email
             }
         }).then(settings => {
-            console.log(settings)
+            // console.log(settings)
             if (settings.data === null) {
                 window.location.pathname = "/settings";
             } else {
