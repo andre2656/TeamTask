@@ -39,7 +39,7 @@ class SignUp extends Component {
     handleClick = () => {
         if (this.isFormValid()) {
            
-                this.createAccount
+                this.createAccount()
             
         } else {
             this.handleShow();
@@ -114,7 +114,6 @@ class SignUp extends Component {
                                 <div className="row">
                                     <div className="col-md-2" />
                                     <div className="col-md-4"><button type="button" onClick={this.handleClick} className="btn btn-dark sign-up-button">Sign Up [Basic]</button></div>
-                                    <div className="col-md-4"><button type="button" onClick={this.handlePremiumClick} className="btn btn-dark sign-up-button">Sign Up [Payment]</button></div>
                                     <div className="col-md-2" />
                                 </div>
                             </form>
