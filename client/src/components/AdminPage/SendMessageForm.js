@@ -26,7 +26,7 @@ class SendMessageFrom extends React.Component {
         if (prevProps.email !== this.props.email) {
             this.setState({ email: this.props.email },
                 () => {
-                    console.log(this.state.email)
+                    // console.log(this.state.email)
                     this.getMessages()
                 })
         }
@@ -43,7 +43,7 @@ class SendMessageFrom extends React.Component {
             this.setState({ message: '' })
         })
             .catch(function (error) {
-                console.log(error);
+                // console.log(error);
             });
     }
 
@@ -55,7 +55,7 @@ class SendMessageFrom extends React.Component {
         }).then((response) => {
             this.setState({ messages: response.data })
         }).catch(function (error) {
-            console.log(error);
+            // console.log(error);
         });
     }
     render() {
