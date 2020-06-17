@@ -39,13 +39,6 @@ class App extends Component {
           <Route exact path="/sign-up" component={SignUp} />
           <Route exact path="/settings" component={SettingsForm} />
           <Route exact path="/app" component={MainApp} />
-          {/* <Route exact path="/iconq" component={IconQuiz} /> */}
-          {/* <Route exact path="/fsq" component={FashionStyleQuiz} />
-          <Route exact path= "/chat" component={Chat}/>
-          <Route exact path="/stylistChat" component={stylistChat} />
-          <Route exact path="/stq" component={SkinToneQuiz} /> */}
-          {/* <Route exact path= '/styles' component={Styles}/> */}
-
         </div>
       </Router>
     );
