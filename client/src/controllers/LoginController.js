@@ -2,7 +2,7 @@ import axios from "axios";
 
 class LoginController {
     // This is a list of callbacks that are remembered for when the user changes. (login/logout)
-    
+
     userChangedListeners = [];
 
     user = null;
@@ -13,7 +13,7 @@ class LoginController {
         axios.post("/api/Users/login", postData)
             .then(response => {
                 // Got here, we should have a cookie set and can go forward
-                // console.log("User logged in");
+                console.log("User logged in");
 
                 let user = response.data.user;
                 this.setUser(user);
@@ -21,7 +21,7 @@ class LoginController {
                 afterLoginCallback && afterLoginCallback(null, user);
             })
             .catch(err => {
-                // console.log(err);
+                console.log(err);
                 // The error might have come from the server, or thrown by the client
                 let errorMessage = (err.response && err.response.data.error) || "Unable to login";
 
@@ -45,7 +45,7 @@ class LoginController {
         this.user = user;
 
         // Go through all the listeners and notify them
-        this.userChangedListeners.forEach(listener => listener(user));
+        // this.userChangedListeners.forEach(listener => listener(user));
     }
 
     logout(afterLogoutCallback) {

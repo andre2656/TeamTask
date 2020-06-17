@@ -6,8 +6,8 @@ module.exports = {
                 firstName: req.firstname,
                 lastName: req.lastname,
                 email: req.email,
-                password: req.password,
-                phone: req.phone
+                phone: req.phone,
+                password: req.password
             })
             .then(dbModel => {
                 res.json(dbModel);

@@ -68,8 +68,9 @@ router.post("/sign-up", (req, res) => {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        password: passHash,
-        phone: req.phone
+        phone: req.body.phone,
+        password: passHash
+       
     }).then(user => {
         if (!user) {
             res.status({ error: "Error creating user in database" });

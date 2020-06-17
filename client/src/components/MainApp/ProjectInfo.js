@@ -12,7 +12,7 @@ class ProjectInfo extends Component {
             <div style={{ marginTop: 50, display: 'flex', flexDirection: 'column' }}>
 
 
-                <div className='row' style={{ height: 50, width:'100%' }}>
+                <div className='row' style={{  }} id='personnelRow'>
                     <p className='col-md-3' style={{ fontSize: 22, fontWeight: 'bold', textAlign: 'center', padding: '8 4 4 8', height: 36, display: 'block', width: '100%' }}>The Beginning</p>
 
                     <div className='col-md-5'/>
@@ -36,7 +36,7 @@ class ProjectInfo extends Component {
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
                                     <p id='Name'>Helen Aguilar</p>
                                     <p id='Position'>Costume/Prop</p>
-                                    <p id='Email'>example@email.com</p>
+                                    <p id='Email'>hla1016@gmail.com</p>
                                     <p id='Phone'>(310)555-1234</p>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ class ProjectInfo extends Component {
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
                                     <p id='Name'>Nasim Campbell</p>
                                     <p id='Position'>Styling</p>
-                                    <p id='Email'>example@email.com</p>
+                                    <p id='Email'>nasimcampbell@gmail.com</p>
                                     <p id='Phone'>(310)555-1234</p>
                                 </div>
                             </div>
@@ -86,8 +86,8 @@ class ProjectInfo extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-1'>
-                        <div id='personnelWrapper'>
+                    <div className='col-md-1' >
+                        <div id='personnelWrapper' className="dropleft">
                             <button type="button" id="personnelDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 TB
                                 </button>

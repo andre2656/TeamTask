@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './NavId.css';
 import loginController from "../../controllers/LoginController"
 class NavId extends Component {
-    state = {
+    state={
         user: null,
         loggedIn: true,
         DropHeight: 100
@@ -13,21 +13,19 @@ class NavId extends Component {
         loginController.logout();
     }
     componentDidMount() {
-        loginController.addUserChangedListener(this.setUser);
+        loginController.addUserChangedListener(this.setUser());
         loginController.recheckLogin();
+       
     }
     componentWillUnmount() {
-        loginController.removeUserChangedListener(this.setUser);
+        loginController.removeUserChangedListener(this.setUser());
     }
     setUser = (user) => {
-        this.setState({ user: user }, () => {
-            this.UsernameInitials(user)
-        });
-        
+        this.setState({ user: user });
     }
-    UsernameInitials = (user) => {
-        console.log(user+ ' hello  sdf' + user.firstName) 
-    }
+    // UsernameInitials = () => {
+    //     console.log() 
+    // }
     UserDrop = () => {
         this.setState({DropHeight: 100})
     }
@@ -43,7 +41,7 @@ class NavId extends Component {
                     <div className='col-md-1' >
 
                     </div>
-                    <div id='UserDropdown' className='col-md-1' style={{  }}>
+                    <div id='UserDropdown' className='col-md-1 dropleft' style={{  }}>
                         <button type="button" id="UserDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id='expandProfile' onClick={this.UserDrop}>
                             AC
                         </button>
