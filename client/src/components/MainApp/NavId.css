@@ -1,5 +1,6 @@
 #navBar {
     color: black;
+    background-color: #24292e;
     position: absolute;
     top: 0;
     left: 0;
@@ -9,7 +10,7 @@
     justify-content: center;
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
+    width: 100%;
 }
  
 #title {

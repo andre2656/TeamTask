@@ -12,10 +12,10 @@ class ProjectInfo extends Component {
             <div style={{ marginTop: 50, display: 'flex', flexDirection: 'column' }}>
 
 
-                <div className='row' style={{ height: 50 }}>
-                    <p className='col-md-2' style={{ fontSize: 22, fontWeight: 'bold', textAlign: 'center', padding: '8 4 4 8', height: 36, display: 'block', width: '100%' }}>The Beginning</p>
+                <div className='row' style={{ height: 50, width:'100%' }}>
+                    <p className='col-md-3' style={{ fontSize: 22, fontWeight: 'bold', textAlign: 'center', padding: '8 4 4 8', height: 36, display: 'block', width: '100%' }}>The Beginning</p>
 
-                    <div className='col-md-6'/>
+                    <div className='col-md-5'/>
                     <div id='mainPersonnel' className='col-md-3'>
                         <div className="row" id='Presonnel'>
                             <div id='personnelWrapper'>
@@ -86,10 +86,20 @@ class ProjectInfo extends Component {
                             </div>
                         </div>
                     </div>
-
-                    <div className='col-md-1' >
-                        <p>Log</p>
+                    <div className='col-md-1'>
+                        <div id='personnelWrapper'>
+                            <button type="button" id="personnelDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                TB
+                                </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
+                                <p id='Name'>TBD</p>
+                                <p id='Position'>CPA</p>
+                                <p id='Email'>example@email.com</p>
+                                <p id='Phone'>(310)555-1234</p>
+                            </div>
+                        </div>
                     </div>
+                    
                    
                 </div>
                 <div style={{ width: '100%', }} id='Board'>

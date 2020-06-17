@@ -33,7 +33,7 @@ class NavId extends Component {
     render() {
         return (
             <div>
-                <div className='row' id="navBar" >
+                <div id="navBar" >
                     <div className='col-md-4'/>
                     <div className='col-md-4' id="title" style={{textAlign: "center"}}><h2>Team Task</h2></div>
                     <div className='col-md-1'/>
