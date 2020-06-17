@@ -110,7 +110,7 @@
     left: 0;
 }
 #personnelDropdown{
-  background-image: linear-gradient(to bottom right, red, yellow);
+  background-image: linear-gradient(to bottom right, purple, blue);
   border: none;
   border-radius: 25px;
   height: 28px;
@@ -122,4 +122,5 @@
   margin: auto;
   padding: .5px;
   margin-right: -2px;
+  color: white
 }
