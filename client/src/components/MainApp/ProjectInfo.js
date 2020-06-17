@@ -3,6 +3,7 @@ import { Modal } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import Chat from './Chat/Index'
 import './ProjectInfo.css'
+import { Link } from "react-router-dom";
 class ProjectInfo extends Component {
 
 
@@ -25,18 +26,19 @@ class ProjectInfo extends Component {
                                         <div className='col-md-4'> <button id='userProfileImg'> TC </button> </div>
                                         <div className='col-md-8'>
                                             <div className='row'>
-                                                <p id='Name'>Terrence Campbell </p>
+                                                <p id='Name'>Terrence Campbell</p>
                                             </div>
                                             <div className='row'>
-                                                <p id='Position'> Creative Direction</p>
+                                                <p id='Position'>Creative Direction</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className='row'>
-                                        <p id='Email' className= 'col-md-12'>TCamp0171@gmail.com</p>
+                                        <a id='Email' className='col-md-12' href='mailto:TCamp0171@gmail.com'>TCamp0171@gmail.com</a>
                                     </div>
                                     <div className='row'>
-                                        <p id='Phone' className='col-md-12'>(949)345-9836</p>
+                                        <p ></p>
+                                        <a className='col-md-12' href="tel:9493459836" id='Phone'>(949)345-9836</a>
                                     </div>
                                 </div>
                             </div>
