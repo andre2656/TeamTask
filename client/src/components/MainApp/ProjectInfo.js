@@ -1,13 +1,8 @@
 import React, { Component } from "react";
-import { Modal } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
-import Chat from './Chat/Index'
 import './ProjectInfo.css'
-import { Link } from "react-router-dom";
 class ProjectInfo extends Component {
 
-
-
+    
     render() {
         return (
             <div style={{ marginTop: 50, display: 'flex', flexDirection: 'column' }}>
@@ -25,76 +20,92 @@ class ProjectInfo extends Component {
                                     <div className='row'>
                                         <div className='col-md-4'> <button id='userProfileImg'> TC </button> </div>
                                         <div className='col-md-8'>
-                                            <div className='row'>
-                                                <p id='Name'>Terrence Campbell</p>
-                                            </div>
-                                            <div className='row'>
-                                                <p id='Position'>Creative Direction</p>
-                                            </div>
+                                            <div className='row'><p id='Name'>Terrence Campbell</p></div>
+                                            <div className='row'><p id='Position'>Creative Direction</p></div>
                                         </div>
                                     </div>
-                                    <div className='row'>
-                                        <a id='Email' className='col-md-12' href='mailto:TCamp0171@gmail.com'>TCamp0171@gmail.com</a>
-                                    </div>
-                                    <div className='row'>
-                                        <p ></p>
-                                        <a className='col-md-12' href="tel:9493459836" id='Phone'>(949)345-9836</a>
-                                    </div>
+                                    <div className='row'> <a id='Email' className='col-md-12' href='mailto:TCamp0171@gmail.com'>TCamp0171@gmail.com</a></div>
+                                    <div className='row'><a className='col-md-12' href="tel:9493459836" id='Phone'>(949)345-9836</a></div>
                                 </div>
                             </div>
                             <div id='personnelWrapper'>
                                 <button type="button" id="personnelDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     HA
                                 </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
-                                    <p id='Name'>Helen Aguilar</p>
-                                    <p id='Position'>Costume/Prop</p>
-                                    <p id='Email'>hla1016@gmail.com</p>
-                                    <p id='Phone'>(310)555-1234</p>
+                                <div className="dropdown-menu container" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
+                                    <div className='row'>
+                                        <div className='col-md-4'> <button id='userProfileImg'> HA </button> </div>
+                                        <div className='col-md-8'>
+                                            <div className='row'><p id='Name'>Helen Aguilar</p></div>
+                                            <div className='row'><p id='Position'>Costume/Prop</p></div>
+                                        </div>
+                                    </div>
+                                    <div className='row'> <a id='Email' className='col-md-12' href='mailto:hla1016@gmail.com'>hla1016@gmail.com</a></div>
+                                    <div className='row'><a className='col-md-12' href="tel:9493459836" id='Phone'>(626)241-8859</a></div>
                                 </div>
                             </div>
                             <div id='personnelWrapper'>
                                 <button type="button" id="personnelDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     NC
                                 </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
-                                    <p id='Name'>Nasim Campbell</p>
-                                    <p id='Position'>Styling</p>
-                                    <p id='Email'>nasimcampbell@gmail.com</p>
-                                    <p id='Phone'>(310)555-1234</p>
+                                <div className="dropdown-menu container" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
+                                    <div className='row'>
+                                        <div className='col-md-4'> <button id='userProfileImg'> NC </button> </div>
+                                        <div className='col-md-8'>
+                                            <div className='row'><p id='Name'>Nasim Campbell</p></div>
+                                            <div className='row'><p id='Position'>Styling</p></div>
+                                        </div>
+                                    </div>
+                                    <div className='row'> <a id='Email' className='col-md-12' href='mailto:nasimcampbell@gmail.com'>nasimcampbell@gmail.com</a></div>
+                                    <div className='row'><a className='col-md-12' href="tel:9493459836" id='Phone'>(949)302-6675</a></div>
                                 </div>
                             </div>
                             <div id='personnelWrapper'>
                                 <button type="button" id="personnelDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     KJ
                                 </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
-                                    <p id='Name'>Kwe Johnson</p>
-                                    <p id='Position'>Photographer</p>
-                                    <p id='Email'>example@email.com</p>
-                                    <p id='Phone'>(310)555-1234</p>
+                                <div className="dropdown-menu container" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
+                                    <div className='row'>
+                                        <div className='col-md-4'> <button id='userProfileImg'> KJ </button> </div>
+                                        <div className='col-md-8'>
+                                            <div className='row'><p id='Name'>Kwe Johnson</p></div>
+                                            <div className='row'><p id='Position'>Photographer</p></div>
+                                        </div>
+                                    </div>
+                                    <div className='row'> <a id='Email' className='col-md-12' href='mailto:example@email.com'>example@email.com</a></div>
+                                    <div className='row'><a className='col-md-12' href="tel:9493459836" id='Phone'>(949)345-9836</a></div>
                                 </div>
                             </div>
                             <div id='personnelWrapper'>
                                 <button type="button" id="personnelDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     TB
                                 </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
-                                    <p id='Name'>TBD</p>
-                                    <p id='Position'>Hair/Make Up</p>
-                                    <p id='Email'>example@email.com</p>
-                                    <p id='Phone'>(310)555-1234</p>
+                                <div className="dropdown-menu container" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
+                                    <div className='row'>
+                                        <div className='col-md-4'> <button id='userProfileImg'> TB </button> </div>
+                                        <div className='col-md-8'>
+                                            <div className='row'><p id='Name'>TBD</p></div>
+                                            <div className='row'><p id='Position'>Hair/Make Up</p></div>
+                                        </div>
+                                    </div>
+                                    <div className='row'> <a id='Email' className='col-md-12' href='mailto:example@email.com'>example@email.com</a></div>
+                                    <div className='row'><a className='col-md-12' href="tel:9493459836" id='Phone'>(949)345-9836</a></div>
                                 </div>
                             </div>
                             <div id='personnelWrapper'>
                                 <button type="button" id="personnelDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     TB
                                 </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
-                                    <p id='Name'>TBD</p>
-                                    <p id='Position'>CPA</p>
-                                    <p id='Email'>example@email.com</p>
-                                    <p id='Phone'>(310)555-1234</p>
+                                <div className="dropdown-menu container" aria-labelledby="dropdownMenuButton" id='dropdownMenu'>
+                                    <div className='row'>
+                                        <div className='col-md-4'> <button id='userProfileImg'> TB </button> </div>
+                                        <div className='col-md-8'>
+                                            <div className='row'><p id='Name'>TBD</p></div>
+                                            <div className='row'><p id='Position'>Creative Direction</p></div>
+                                        </div>
+                                    </div>
+                                    <div className='row'> <a id='Email' className='col-md-12' href='mailto:example@email.com'>example@email.com</a></div>
+                                    <div className='row'><a className='col-md-12' href="tel:9493459836" id='Phone'>(949)345-9836</a></div>
                                 </div>
                             </div>
                         </div>
