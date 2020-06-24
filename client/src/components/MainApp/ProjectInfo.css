@@ -114,7 +114,11 @@
     height: 50px;
     border: none;
     border-radius: 25px;
-    margin: 10px
+    margin: 10px;
+    background-image: linear-gradient(to bottom right, #0000ff,#ed1e79);
+    color: white;
+    font-size: 25px;
+   
 }
 #Name{
     font-size: 16px;
@@ -140,4 +144,12 @@
 }
 #Phone{
     text-align: center; 
+}
+#menuDropdown{
+    border: none;
+    background-image: url(/images/MenuIcon.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  background-size: 30px 30px;
 }
