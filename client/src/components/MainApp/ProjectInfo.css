@@ -148,8 +148,8 @@
 #menuDropdown{
     border: none;
     background-image: url(/images/MenuIcon.png);
-    width: 30px;
-    height: 30px;
+    width: 43px;
+    height: 32px;
     background-repeat: no-repeat;
-  background-size: 30px 30px;
+  background-size: 42px 30px;
 }
