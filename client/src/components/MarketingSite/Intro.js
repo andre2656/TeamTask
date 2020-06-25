@@ -9,7 +9,7 @@ const Intro = () => {
             <div className="row">
                 <div className="col-md-1" />
                 <div className="col-md-10">
-                    <h1>Team Task</h1>
+                    <h1 style= {{paddingTop: 50}}>Team Task</h1>
 
                     <p>This Web app is intended to be a Boilerrplate for future Projects. Web app will include a login feature, main app / landing page functionality, Connection to a DB using Squlite, and signup page for buisnesses trying to aquire cliental. </p>
 
