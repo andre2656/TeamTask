@@ -40,7 +40,7 @@ class NavBar extends Component {
       return <Redirect to="/app" />;
     }
     return (
-      <div>
+      <div style={{backgroundColor: '#3d3d3f', height: 50, marginTop: 0, position: 'absolute', top: 0, right: 0, left: 0}}>
         <form onSubmit={this.login}>
           <div className="form-group" id="sign-up-form">
             <div className="row">
