@@ -72,7 +72,7 @@
     left: 0;
 }
 #personnelDropdown{
-  background-image: linear-gradient(to bottom right, #F2F2F2, #E5E5E5);
+  background-image: linear-gradient(to bottom right, #ffffff, #f6f5f3);
   border: none;
   border-radius: 25px;
   height: 28px;
@@ -87,8 +87,8 @@
   color: black
 }
 #personnelRow{
-     color: white;
-    background-color: #24292e;
+     color: black;
+    background-color: #7dce94;
     position: absolute;
     top: 50;
     left: 0;
