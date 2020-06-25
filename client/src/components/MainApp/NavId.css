@@ -34,13 +34,13 @@
     margin-top: 15px;
 }
 #expandProfile{
-    margin-top: 15px;
-    border: 1px solid black;
+    margin-top: 10px;
+    border: none;
     border-radius: 25px;
-    height: 30px;
-    width: 30px;
-    background-image: linear-gradient(to bottom right, purple, blue);
-    color: white;
+    height: 35px;
+    width: 35px;
+    background-image: linear-gradient(to bottom right, #7dce94, #f6f5f3);
+    color: black;
     padding: .5px
 }
 

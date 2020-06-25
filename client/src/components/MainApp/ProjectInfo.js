@@ -115,7 +115,6 @@ class ProjectInfo extends Component {
                     </div>
                     <div className='col-md-1 ' style={{ marginTop: 15 }}>
                         <div id='menuWrapper' className="dropleft row">
-                            <p id='menuText'>menu</p>
                             <button type="button" id="menuDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                             </button>

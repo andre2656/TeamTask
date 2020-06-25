@@ -20,8 +20,13 @@
 }
 #cardText{
     font-size: 16px;
-    font-weight: bold;
-    text-align: left
+    text-align: left;
+    padding: 2px;
+    background-color: #f6f5f3;
+    border: 2px solid #7dce94;
+    border-radius: 2px;
+    overflow: hidden;
+    min-height: 50px;
 }
 #list-cards{
         flex: 1 1 auto;
@@ -36,7 +41,7 @@
 
 
 #Card{
-    background-color: #ebecf0;
+    background-color: #eaeaea;
     border-radius: 3px;
     box-sizing: border-box;
     display: flex;
@@ -115,7 +120,7 @@
     border: none;
     border-radius: 25px;
     margin: 10px;
-    background-image: linear-gradient(to bottom right, #0000ff,#ed1e79);
+    background-image: linear-gradient(to bottom right, #7dce94,#f6f5f3);
     color: white;
     font-size: 25px;
    
@@ -147,9 +152,10 @@
 }
 #menuDropdown{
     border: none;
-    background-image: url(/images/MenuIcon.png);
-    width: 43px;
-    height: 32px;
+    background-image: url(/images/MenuIcon.jpg);
+    width: 10px;
+    height: 22px;
     background-repeat: no-repeat;
-  background-size: 42px 30px;
+  background-size: 12px 22px;
+  margin-top: 5px;
 }
