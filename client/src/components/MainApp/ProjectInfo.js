@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import './ProjectInfo.css'
 
-import { FaBeer } from "react-icons/fa";
 
 
 class ProjectInfo extends Component {
@@ -129,7 +128,6 @@ class ProjectInfo extends Component {
                         </div>
                     </div>
                 </div>
-                <h3> Lets go for a <FaBeer />? </h3>
 
                 <div style={{ width: '100%', }} id='Board'>
                     <div id='Wrapper'>
