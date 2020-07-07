@@ -26,7 +26,7 @@ class LiveChat extends Component {
     render() {
         return (
             <div>
-                
+                this is the live chat mofo
             </div>
         );
     }
