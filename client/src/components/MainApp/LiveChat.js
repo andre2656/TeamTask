@@ -26,9 +26,7 @@ class LiveChat extends Component {
     render() {
         return (
             <div>
-                <p>
-                    Live Chat
-                </p>
+                
             </div>
         );
     }
