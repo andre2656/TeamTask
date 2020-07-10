@@ -22,6 +22,16 @@ class Test extends Component {
     // handleShow() {
     //     this.setState({ show: true });
     // }
+    // Initialize and add the map
+initMap = () => {
+    // // The location of Uluru
+    // var uluru = { lat: -25.344, lng: 131.036 };
+    // // The map, centered at Uluru
+    // var map = new google.maps.Map(
+    //     document.getElementById('map'), { zoom: 4, center: uluru });
+    // // The marker, positioned at Uluru
+    // var marker = new google.maps.Marker({ position: uluru, map: map });
+}
 
     render() {
         return (
@@ -32,7 +42,8 @@ class Test extends Component {
                 <div className="card" id='uploadCard' >
                     <div className="card-header">Real-Time Algo</div>
                     <div className="card-body">
-
+                        <h3>My Google Maps Demo</h3>
+                        <div id="map"></div>
                     <p>Hello</p>
                     </div>
                 </div>
