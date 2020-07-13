@@ -43,7 +43,6 @@ initMap = () => {
                     <div className="card-header">Real-Time Algo</div>
                     <div className="card-body">
                         <h3>My Google Maps Demo</h3>
-                        <div id="map"></div>
                     <p>Hello</p>
                     </div>
                 </div>
